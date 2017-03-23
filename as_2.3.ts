@@ -6,7 +6,7 @@ class myContacts {
 
 // check to see if contact name is valid when returning value //
     get contactInfo(): string {
-        if (name === undefined) {
+        if (name !== undefined) {
             return this.name;
         }else {
             alert("This user is not valid");
