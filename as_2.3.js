@@ -5,7 +5,7 @@ var myContacts = (function () {
     Object.defineProperty(myContacts.prototype, "contactInfo", {
         // check to see if contact name is valid when returning value //
         get: function () {
-            if (name === undefined) {
+            if (name !== undefined) {
                 return this.name;
             }
             else {
