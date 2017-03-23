@@ -1,8 +1,8 @@
 // Typescript: Example of Class creation with get and set function //
 
 class myContacts { 
-    private name: string = null; 
-    private phone: number = null; 
+    private name: string; 
+    private phone: number; 
 
 // check to see if contact name is valid when returning value //
     get contactInfo(): string {
