@@ -1,6 +1,8 @@
 // Typescript: Example of Class creation with get and set function //
 var myContacts = (function () {
     function myContacts() {
+        this.name = null;
+        this.phone = null;
     }
     Object.defineProperty(myContacts.prototype, "contactInfo", {
         // check to see if contact name is valid when returning value //
@@ -12,8 +14,8 @@ var myContacts = (function () {
                 alert("This user is not valid");
             }
         },
-        set: function (name) {
-            this.name = name;
+        set: function (contactName) {
+            this.name = contactName;
         },
         enumerable: true,
         configurable: true
@@ -22,4 +24,4 @@ var myContacts = (function () {
 }());
 var contact = new myContacts();
 contact.contactInfo = "Jennifer Minnis";
-alert(contact.contactInfo);
+console.log(contact.contactInfo);

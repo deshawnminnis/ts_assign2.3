@@ -23,4 +23,4 @@ class myContacts {
 
 var contact = new myContacts();
 contact.contactInfo = "Jennifer Minnis";
-alert(contact.contactInfo);
+console.log(contact.contactInfo);
